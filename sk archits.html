@@ -1,0 +1,373 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SK architect</title>
+  <style>html{
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  .navbar{
+    background: white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 10px;
+  }
+  .navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo a{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  li{
+    list-style: none;
+    display: inline-block;
+  }
+  li a{
+    color: rgb(5, 3, 3);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+  }
+  button{
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 90px;
+  }
+  button a{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  image{
+    border-radius: 100px;
+    border: 10px;
+    padding: 20px;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+  html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .img_class{
+    background-image: url(./Capture.jpeg);
+    height: 100px;
+    width: 2000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  
+  }
+  h1{
+    font-weight: 400;
+  }
+  .br{
+    color: #fff;
+    background-color: #e6df0e;
+    padding: 8px 16px;
+    opacity: 0.75;
+  }
+  .middle{
+    font-size: 36px;
+  }
+  .margin-top{
+    margin-top: 16px;
+  
+  }
+  .center{
+    text-align: center;
+  }
+  
+  .display_middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .architects{
+    color: white;
+    padding: 5px;
+  
+  }
+  .proj{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  div{
+    display: block;
+  }
+  
+  .grid_item{
+   
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width as needed */
+    gap: 20px;   
+  }
+  .display_container{
+    position: relative;
+  }
+  
+  .summer{
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+  }
+  .display_topleft{
+    position: absolute;
+    left: 0;
+    top:0;
+  }
+  
+  img {
+    display: block; /* Ensure images behave as block elements */
+    max-width: 100%; /* Prevent images from overflowing their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+  p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .input{
+    text-align: center;
+   margin: 10px;
+   
+  }
+  input:hover{
+    border: 2px solid black;
+    padding: 2px;
+  }
+  
+  .button{
+    background-color: black;
+    color: #fff;
+    font-weight: 400;
+    padding: 8px 16px;
+    text-align: center;
+    position: absolute;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .footer{
+    background-color:#000;
+    color: #fff;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 10px;
+    margin-top:0 auto;
+  }
+  input[type="button"] {
+    background-color: #23c423;
+    /* Green color */
+    border: none;
+    /* Remove default border */
+    color: rgb(7, 5, 5);
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: groove black;
+    /* Add rounded corners */
+  }
+  
+  input[type="button"]:hover {
+    background-color: #cdd3cd;
+    /* Green with a darker shade on hover */
+  }
+  frame{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px;
+  }</style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#">SK Architects</a></div>
+      <ul>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <button><a href="#">SignIn</a></button>
+        <button><a href="#">SignUp</a></button>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <div>
+      <img src="https://media.istockphoto.com/id/1411304340/photo/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.webp?b=1&s=170667a&w=0&k=20&c=FBPTGMisCAalZcO-dUEMfcFTRClZlwc7FurxnUFijCE=" width="1400" height="800">
+      <div class=" display_middle margin-top center">
+        <h1 class="middle">
+          <span class="br">SK</span>
+          <span class="architects">Architects</span>
+        </h1>
+      </div>
+    </div>
+    <div>
+      <u></u><h3 class="proj">Projects</h3>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">Summer House</div>
+          <img src="https://www.quirkybyte.com/wp-content/uploads/2018/11/vinayak-house.jpg" alt="" height="300px" width="400px">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">Brick House</div>
+          <img src="https://media.gq.com/photos/5b6b20e3a3a1320b7280f029/16:9/w_2560%2Cc_limit/The-Brutal-Wonders-Of-The-Architecture-World-GQ-Style-Fall-2018_07.jpg" alt="" height="350px" width="400px">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">Renovated</div>
+          <img src="https://media.cntraveler.com/photos/593af2dc986db21b5a8a00de/master/pass/architecture-cities-st-petersburg-GettyImages-450576251.jpg" alt="" height="300px" width="400px">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">Barn House</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrHE3oyncDckJRo23WYPKz9g5u2L3EbNgNg&usqp=CAU" alt="" height="300px" width="400px">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">Summer House</div>
+          <img src="https://cdn.pixabay.com/photo/2013/04/11/19/46/building-102840_640.jpg" alt="" height="300px" width="400px">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">Barn House</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHhUu7W5qFmb7M5kjsFnfz55Tlw04OsxVlzA&usqp=CAU" alt="" height="300px" width="400px">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">Renovated</div>
+          <img src="https://i.insider.com/578fc748dd08955d018b4a65?width=700" alt="">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">Summer House</div>
+          <img src="https://www.99acres.com/microsite/articles/files/2023/08/building-design-ideas.jpg" alt="" height="300px" width="400px">
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <h3 class="proj">About</h3>
+    </div>
+    <div>
+      <p>The Council of Architecture (COA) has been constituted by the Government of India under the provisions of the Architects Act, 1972, enacted by the Parliament of India, which came into force on 1st September, 1972. The Act provides for registration of Architects, standards of education, recognized qualifications and standards of practice to be complied with by the practicing architects. The Council of Architecture is charged with the responsibility to regulate the education and practice of profession throughout India besides maintaining the register of architects. For this purpose, the Government of India has framed Rules and Council of Architecture has framed Regulations as provided for in the Architects Act, with the approval of Government of India.</p>
+    </div>
+    <div class="grid-container">
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">prabhas</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7kgECb3q8teZEPfrEd8kZXStZxNYxWzV-EIfdHDGLykwNBSTt" alt="" height="300px" width="400px">
+          <span>CEO & Founder</span>
+           <p>66
+
+            I believe that the strength in our team and our ability to deal with adversities is what makes us a great partner for our clients.
+            
+            <mark> THIS WHY I'M PROUD TO BE ON THIS TEAM.</p></mark>
+          <input type="button" value="Contact">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">anushka shetty</div>
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0MqwgZz1j3NYCG6qkvvHdFwE08UPzZp-0453JDCAU-9XpMPs8CSnisfis3dZRKHUEv1bC" alt="" height="300px" width="400px">
+          <span>Architect</span>
+          <p>Architecture is a visual art and the buildings speak for themselves.</p>
+          <input type="button" value="Contact">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">ms dhoni</div>
+          <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/57.png" alt="" height="300px" width="400px">
+          <span>Architect</span>
+          <p>Architecture starts when you carefully put two bricks together. There is begins.</p>
+          <input type="button" value="Contact">
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="display_container">
+          <div class="summer display_topleft">BALA KRISHNA </div>
+          <img src="data:image/webp;base64,UklGRv4fAABXRUJQVlA4IPIfAACQowCdASo+AT4BPpVGnUqlo6KwpjJK8hASiWVuu8LNqrAA9BA6dKg2qxvz7rv/TOvZvX/GeCPZz7YeAu+LdFZ4X1qzPHg/CH+1k2aQFTIqZH0VHtr/a5fKA5OIen8Bmh7ezWRHUW+TdYR91xe6Boaf/wJsUcNPlQGYez1Q7ZpES0HvAtIBcUERVSIQeeNJBgaX3p4rbGcJXBYFlN0gLPJWPHlKDs24sPsUGAb2LnIysshrTTVw/LY7oqHukev5g0/ApPxFIk6+ynS+e9xB/J4/g+yO65z7HF3a98x2cIc6giIUBYN4i7tKkH2LaV2iRzPkpJ/hBuT9XTDNKONpFO+TYb5RINhN0pwS2oEMOxePWyugUJOIbzeQJgHrBR9QIlf9KuHzwnHCk46LO+w7YR/V9oZq6cwS+RIPHD6D/eE8vn0BjRpM07TNGfik2afwI4pry7z02mq0Q7mv95P1+oI5OUtfBbH4/s52boPkAxYAzBqGpyAtPZ3kTAxeQAMepc2X7GeM7Mdi00FwQH3wt7Tg++R/R+nmkTvFvnxyjpsPfPI9h4NXnMwtjvQKH1qhwujCw1332LXjt2jSc6oWQYmly+40hQg5A/Mr8IqPMeK9LYbqs3rj/W6g1GdJuRhnogAdhqtwTf/ie/vpXCLSMNIjg3vLkW9LnLSYdOBUlxTNPNIHgkKDN07TMI+4DBKU0WWdh6d0DzBUfWWiCbGd2ox8h0HX2GNVXXDU+o68pITAP84ASoocP72UBkvqrrCbHbM8imyXghc91pF05W0F8SjkN49hGy+Yj4LN7WNW90razt+lCHppc3TVl7miASBbE71EZeNsl3pD9G9FNNEqJfa/AGAYYmLCV6wsynzAAcmb38ei99O3GwIL88k458hy78KU+lJCwu4pL7dpaxTWrum3mp2nBXm3qNig6yLiH7uTMnLQ7PTWg7S1YyEfGdElfW1a/zjcwIndTKPhlP3eR8bTuTsLsBpTRHLmDIRZy1/AvH9FConV80SjFSlKZRYaOEZTsH9rZx1XWGnPGKuTwwz53OoGr45BIOFtKwS4fn+Gs3Ilvqcimf7bsLcX+nOdWK8qhTK1FKesQSJW9IXKDPPNjySAEoWU6NngAHXd7pEujh9OmwZbEZsKC/mxdFqfGafWVs/O0aaoTv9tpcGNXBh2jC/VxOU9BJnlwNdt/QvLjZq03/XMQLAkikb9ibrBDyRllTfA0iOTzULSTpO3SxEs/0X8dWj3+i+QPM/QTCDnyB0dl/0rESaVIypThot+nhIaQtWHZ3YGkfGZA3ohmPKyMsVyiZQEh901/Dz9/duw9bVFxElarII6wFS5q4UmIxj8y9RNA7FQL3IRbFNgZe5sKqrPXaOP45htz4pYM13i1MhPnEu06eFFaBkZoQhTnFJj6b/LfyPjF62342Qbaay34CxVucn26wbPkhTjLFDBV5dJI9VEHZj1AGssW2VzGcirC15JicpfyCRCutPZriq+V2nfuvJ8UdWfB5oeOftcfo4FdrtPJw3+L3HdycRS+X0gv/vvnulpm4W12x2T5CwtuZo76Uc/byK7ioGgVwEsg2UrO8lLexamT9gLapLglHYNG05frITcbxwm+RP42ntljQFf/h3Qk2OmeDcOnRpAfgaK3+BQ/YSBzexGw1oVhi7rEYTMzhtireZGjbfqFcCwAimtgmAOq9w4KahGpDRm4NAeWivYrMWo8TR3OCG6Iz6kgAKV+3zF11T8sLH1QqL1AkCzPoAA/vj3x+vXAW/2X4EahZIN5eSBk0J2bVWXwr8sMVtukgxmqYU7QUTM9AN4aYkoQefgGxS2uIkvan3YR2h8KFyt4l1i/lE5zH1cPFBKsI6IhiivBkwe33TPW8jY5ZpeHH7Ygzy9UEclnacuqXe4RNjaCR/grT2kQMW76w3agW21PDTR9pY2L6jP/l1+vSD5S4N9RxRuR4YrfJM4oHYN0o3F20Y5uSRHnyYzCWa9G3nmkJ3+wrNL0Qw532vq36pKeRdYJeL+WoiOvf1W1OPuORZc6iSeJ2pMvnG3vgCtYCZ8E0n+NdpQ6mQpI9hiQf7JzH+ScX3kMLC/3WWJ+hFK1vWJiYwRh4t+mO9EkY5bqIGuBOQUePGemKVx9dRQcNXGUkqkBOhqY4Eg4H+70dHqLpPdf58kzc7bQ88SZc44rJ7sGBDfeax8bemhZOLn+N2IqSDIkl/bsBnT48hCyGoFWNMOmvYVN3rtsxKH5WCWbaJu8/QV9xKHcOmn1quAYoXsIPwFz78lDP070WYMp8TXxg5k/qJ1iBImP9mqEomXeNhiIi41stW8v7gH3Za+dqy2ZPfFOVX1h+iXsD5Jzm68mnuGwDWSRIuZnGzYLcWPU54xsSYncb+1tY1iWPPmyOblfHvA1U5DShMYuRMDsq+y8j0Ick5Lj7fJIsD4QWcdLN4XM4JUbaSkfofjjBNw5ACIi9Fnj32mFHbOej6fl25+4xczRFnLqyHu8t/n6op7tBwh6tjLtC/UjCEM+MaLecytc7qUlQFnnTPicSYVr5dhp+fyfYKKBi/CYdBPGkWKPZLGSsAezPsEiDHAae4KoJAxhf6hac5J4Zc0xsZ6dkNw3kGTS4G5XUUiWl6s9ghxwGpIqryxJJfO/R7ZexlEAfuOzBPCqiaQs2ix71aCM+OtKVChTH09BImaOCPQZQ5Q+VnZpza3d4zBM+jTVgeiW7V8f00KDv/OYkiKZPEdG+mVXIss5xkQ+njZ+aMbasBmCrcNSV8mNrrPJJyA8xZ56sUXexXJfUwV4TK98KKt9Yc4Um5B4EzqUktgu0ZDRs7VXegB21cwcnhrw7Uid/feGhd51RNqUjZfSBowtLFBm71+Pf7cpxS9a0R3JD4YBCP25nUePdjDt1BIUl+zmterGU47iAJLOvZLZHLRnGZV6m1xUePsq8BJwuzt48Uboe3BAcQjMMt0CQUwy+SxUpSeLoUm46vYgv1SgGP6ATOXrKq9XsamZu1dTs5ZNFW3guFjsmn2qk/6fIXVwrYrPKpbRMxok0fGKmbStypnQXzV2QmE2uBjiNTm2nkodjeXHu7cvX4RZ67e14PRxdbjKq99+ngqkod3Eosg4aCuJWAGr5L4PYie3lMUrxcVtBBFktEy04stZs6igctL1Q4XbDOHW/LOwLGyLEYGrYsU8X7byClA1gg8jSoj1tqd1hPcLBlUsFeScHy6CPSIlIJwxYtjphRQieowWsydAjrp7NsylvxOZhNOt6lMRf92UCmbAa+6DnK6dATaLqmJwOFLiVdfNSd1TrLO74fTZds5Bcc/4pdUuOrnEgtRy6F+IO7Pzs4qzKD19AjXt/X3q9riQIOF8rjyF8qjwAg/meX0aFsG0RTR59qpLWj+ingOfN/WAu0lPi5jnLMBsKRcZqCGF3nYCkw0SaKNPg6aEI4RXUBz0kX/0DITJ62VwB6oFZ7T+lKAsLv6CdZ24T3KRSYh2tWeQ8F8HabpsPsg5r0PPGlINXmK+FaUuBvYY8DRLNTdvxszpPBLDbkDQdsQRhmSqCL7tElRrBt+jT+gG1UpvdYyq2KeR6BmDwQO16Vj8qqAbFmPpGsII/7mSSFp9raES0Y9l0ljKQpkUkmGSzD14Mb9aVvBj7xRc0dxlA2jT3l/fwAbw/NlsTswFwV8X++sTipFQSyzkunN1AITm+jl4lGC8KmobypLSoVs0nF/YeCDVq/o3HsrK1tvCN+1zimmHDIAPJ0jqLeWEziab9p/KXL8YMhRlm/VImoMaqmtjMBX4/FvPhnm0KcXL9XBO8cNKlcUNUaT69ZoiggHBYWIm7SgxTkchTA4o7OSgVUxRVnD3i5wuIzqhrMufgwNpBZQXkhpzEgUjuayr16J4lbAVUgWrJaibogaLWCNsG5OgNc7k8NDaIDEmiZ3G3tc6h0c2Oxgybwebd9S5cQZRvoqvRAQtOMBYF0qV8U8iY9nQEC32rk2wtSg17xFHLbv/d9ZjQ7+oS8ESXfbm8/gAcIleEPt2KHqsQZHau0YrM9GMcEvspsP3jIRFr3PqnK7KvbJQ78D+Te3jsK/n1cbmZaHfkaaehWzKY7SljLVQpsts3m/4LrcQ4TIcxSa0pkCi0gz+j0k9OJmoGa9rmsVfqtnsqcKofRjpBMaMkUXOYNNSgPLyuyRxRzfdgInXlwdEdkmllV8v67iO33IEHU3ocXp+/fZ+KJWA9eQZC9eq4q2JF5TJKElQbo8hIbrZlAhFnOfZLUwrYl1LhWuWtYTYR3eY9fGwh/BOOPlijSI/oXVX5B0YG1dEXJ/PyDkNsMX3YCgO+ICA+vm0G1i/SciM0mV2RiqGkymSNZN8peHHqJtmtBCWxSwcLYyW38rEzeOf13fxF98Wpgfcv/jU0eiq9CvLm1wMSfO5I7kRuZc4wBo+XimL1hD2Qyd7R//3DbRtTpG+djuGHrfJ0VanY6u1LVlYkBcB9bXMVL0HLQfNeHBM2N3etjxIpU9QsJFOwqDxyTJZCupPhFL/ecCx6ZRJS+Rowbr0UkESfoBubiqTqK+x+NHFIfAJloPIUFjVXeQI/9gg0fG+9KrNfpBnAmX5vjP3pgfPD3mENf32dRkyaLPoP+zksAsffJ3QjLBwHYm1m9pjUascU2nZr6Afb9QdDtUuhclP/1ZTvYp1VaRny9Fx8zZEAyTCTLVfou/bk3TAzsbTUDUHsz4Oylt9XGnoJT5GcyVX4xCbTZskKg8FBC6GuFxq4c1LIU6gdh5h8W7PcQ0r0/kgQvi58ImrRoliXT9goAOSkqjipexUfV8QCHQ88tOmaS41FdkowbThTOEveRXv4fb117mzTAKMaL03xAHYk7J0NR3CD5R3sSFkeXI7iYYSKpMK+IjdNvq5CGI6MfmGlC9DBOA7D01Vu8HwZZVqd0qsMVIcc7aLNxcDyK9WVLm0XwhkE5O64M31IIu/5CLQEfZjYnhsyi+eCtLBPXq92I9sk+2tHo8crzc7DGefvb4P4iHE30+IdlHcEi77jBbPAV6+Lyu5ARxXhq7enVkdhhRX6gYqnM1bGfSw4QXoKxz9cVhpJJWhQnw3z0KDmcRHWL/zDZjzRf5y3mTeX6N0xpkWoJjxFYuzXpol3ae5fO/aTaQifugwFIPnB0tce2vNKEdQAFhJgsXQ7TpRZSidTP8SHo/wlFQFsC0HAZCHMqq5xcvaC+WwTb4waqUXSySFiBLwstdhj2+9Am0Rtw8Y+5+j3uY3fOAqwVlS/fd4i73OjsOG+xqfNG3Eb5OnJ0fKDLqsyXFlcqOKQD2igbQBkt4pg7adcB4UiijZH+I/lb998esP3m5/v2sHXB1zWvMmLgiWb+FhVH4xpCM8yOsHtvFn9W/qXdhKyAGu7UtRBZN0WicXOXIn/rOUEcYniR+KbSDvX43hEClq70H2iPeyT1i/FlrrL2kJxxXSQMeZdTLqH5Ce+uZNYLSHxWK3EBkT87Mc+itawaEFcxIjIrAKP+wVPZIXOrGXJ4qkyRjiOdjOLCOrMVfhugtpmEWUBgWqHL68la4u1TLa6UMFtwa+PfjPDMcEJh0rU+qm8nAHoXHAHYzLPieS5x6/8IlyL+tKDAtHbflep7sCxNtR0tLeJNm4IDXHJWwXbETeBTTvlg8sSnR4M2H9VyRH5Chua4tr+PKiEwZ38cQS/+sXg1e2NM+Dden4+K3itiJzj1DU8wai7t+E1qT+Uadeo/2/TLpYGLM8+wgRmVpGr+SsxIKEq/mv4FxX8IfgRD8DpmIJSNjRYwrWbXHHIms2arhTD1aoUJK3x99h+d3kFcGXrvt3gSOd8yT6W2eMo0NrxQnW1LZp3vAw50fbyjkxpgtT+JHJyuMKR53lvNWtverHJHyW9aOahImt4XT+tO3XQK2H1cSvZdDooeTwPniX+LhC4QBzsv4LiZ4PzlUEk66mFNeJqqb6ij8A5gTtfftrFtu8BUF8giRqY17heouxfmzWw3GaIyYHmiIzZ2JUcIRMsuGk/b+HC5TtTYFp59c1U9D3UAG51/mk+6HGMZrDA3n7CmdcQfBRoBGN3qlZad8Y1V+fb4YFZyOcgeJezKN5SKdS3AcYzOIDSWVCyJ1n17gojShkj3KcJJ8WNAdubkkwM5vFybbjjTWY2SNzu5e0XjWFJUD0iB+Sw5/nJvisrjcdvS6ttPo9+y3qpyEWbQXqK+aahrRFsoL0ChD8ZlE0NsFvvz1NmHL7wFU9ATI+q04xRvEwo/Wc2WhPuYyR5RE9wYHJDsY3HeaNHlzghBHYT50DehK4B2KNe34z9uiiYar4rhAXpGlJALcaxOYVEUPCoPOmUz046ckcLz4QMtVdpShKhpzxINo5xo171w+RTU1LlgpdX1CuZVNQQOitH6xHkD8C3dd3faxyIFlXeDyafqCkBqhCcBC29Fg1NJrPw4pC6ojDT0q8zp5AIoF5uryI8Rj8FkFYVU6olF1gHz9X9ekEm5Ex13gHeHsZBZ4EwifZvrqqykckAm9XkpLR5udRzkUCv1HVv45oqwHvaCV0p+mSjFUBObBUN5GoAZkxW3NnMM/ofAIeKtbZhzmuqZd8WtyjWSnK3Htlwp9rJyhjN3cvEfpJ6Wi6u/wkdPbLx6kzT8engE7f4D5z3+2BzBkYnhHN81mvAnRKt8+izm3wCqnL6Ymdd7MldSWkiD7wclzVotKxzsxlyM4Ol5oGF5wGxZIVrzaR9gysdSjoraW/nS1KSAqkvhRghl4YaPkQs+NLtY/kw8um6lAXl0jefFFQRismK8UxNiHVEuc7xOcVraDZKn8AAld36tGdO6TAdPqo/n1oehY/tgu85P4toBTyGr+9dWWuEC+L5DZC/NYFYeQH/gkzOz8LZD2FAuXy02+3kawqCs7b7G2SoYIaeSlkHKcgiUjNsg6xfLaZ5L/GThfxX8G68AWmtYA2X4m0fF8xvbi6wd44GVghfWL1jAiU60wWipGx41a1RoPuB03Fo+4Xt3xTlyfyxO8Y63ZGI0QU4BQvTVOtj3WU26BpSUDr3rAjFLLDcpgXkWbYoyVQoJoK9udmTbPLoju4brYD86MmLfckKaWXpDH81nk9m679EiVQaFPJpYk5+pSxJS23sxDW8IsbwWrPMn6/qKnJ2M3D53xsYETAqTs3ymgcwuMc1sDagLMxkyF5Lr9hTawiocff+ZjCxdOE6Ngi77mnqaJVbFb725rXn66FDTZAkA2zMAiNOd1dsMR+UDk1akIUvgFdYgGuVs60ULCmZzdHv9uDphQDaIqNPPGcddZuwpPaZ3Qija0i0W3uAx0dHWA6CqL74ngtnNEZdHDDVTS56x/uiTQmQt1/3u7oa2SyDnaEnSd6DYdWGcjMeicmC4+B76O8Jb7Knu38tdjiK+3DXpVN2syMzQtU+e5gRMyGeWi3nm8zDFi/2fRxA18NmsZ5tCS0MPJ4/j/5dMIPK2gc3vbHLRngjL6GkqjB2+bfWlyDAZArT6jC5G5J+4xuXS0Gnz/3O8/13Grwtd7tTwTb40oHL1WaXZ/aPCH6JF82MFDeOl8hGoa8YSQXvyFM771Y4ZTOpNZ8i5iWe1oYZucZ3gLUCHuraw0dbX/DTbhvaF9rYK0lHOIb+g1Jz9CA9gjZ+YGI3HvxtD0otaKq6wntZfHIqPcpu2peSK9VBZevQQvorj169i9sIDZnT8IMUXokMfjCGUHtqOwIMvzCLq9VyAH46Yw3Fh1bbjgGkSKMFqK2NHaZHlDbrae3LptZv+uNo5/j+g+WGYHS5qT2PO6lnirUw5TrE/RJBxx85Blj+mVdKlfaz1Mj/k4wUShoGMgfZev5keTqJyt/rPhCnq/rIgrbSkaiLgfX95ztKHCQ3flNnlXWisUq1UhU3Nueu7Yt8P/9yHO2iVi74YLrTJ1XIkolNPo59VuanvfPHoCXmRpH2G3s1TALaqYTtqyhSih5DSt1TbBbDIJ4au64mJ8wAoNgVLxIUXA0jEChnSHZbjSu3PP3E5wvwv3f5M4hCeU5FW7vDC+bgTg2FkEN65LE5JdWoIoxDZPn+7Ws71i6hSMc9cik86WsHScOJBRGGLW+9xfmzPyKYTJamyBchNYmSC1BxYqgCGbMTgaEDjux8I3qFF9SP183ozDRcH64T2z+DPEdBPhui5HaPktjIAq4OBd/RiRA1+iU/WkiJJUVx3+pEzsjFuyGieJ2iaq61o/cZ/Ni1Jio9uEK3eTmUO3VUuHJWjMtVTP2kRho+ZpcRAJDA0HHd9055X20Adl63KqAhZJzWnMxum1yAz7kIlpHlQ68ncIVAfqRfzRB1NWoT740vZ3SO3r2WHZYHpGu3TK/8VndzXUPDFuEf8vjp1eaeQdrVsNAx1XGkC7Tf4cNJ7O+K2Nja/Vxj72AGRd+KECdJcENlSu6gq5ePLG9BuHhB1EuxK+hv3bt8Xzu8zyoAZ63PsM5fSvV3i8bLJQI2lZ3hV9asxiZZ2dUX7b7IxogpGSaHlg5s4d2TUiEyYdf7XkoJGIbInze/GAhgKkWRVuNzaFwuZCp4b0ka9tNRPbqMiWTXRwv5iqLYo8dCn4I52RhHWKp6tzQOmIyanSlsKMgdJsz8oDER06YM/Iwdvdih2cL+OGrevdM1JGNjGJoEAC06ldrxQThCjyy1HajV3S2dumErGUVvWrzE8VlteO0jkr8dP4lbr7tVRkU7pK4KFMGQsq1z+ZlTNxeiauntQvtMl8KxQoHZaAuvgYuSMiNVvbTT4prNDT8NiualCg0mK9UESH2Ko6rRbF3ejqb5sOl2L+h2DJCbvOYnTYg9DR3pDH3XXfVzdXirXxFwvXqtSogs9welDTY4xR5hIIFVhh6WPyF4e0c94Xt2yphkrAlHnp0Y19WibI2D92661YZpuLLsFDJhV6JyGurSVJRECe1tlFt4LCn8tND0Mg6Fm7jxVcTVHckUhtlpvaj69y/ub+JHKcFuXOA5XcwR+8HKFmVhxjot/00Oa33wNwEoKcsOqHLKX+miIRgVlhHYZu6JemFSZ8yXIseOcw3eyyqJVZ/CSuZ+VP2DNCn7yxf4CUJeHjwJIh37qQLgjJO8hapf8IOGcRSf921W91p9z+qbhfmyJH5JJ2BrRilCXk+y2WPyih2G8p3CFr19KmOOX76qaEJPECafqWWomEIwxhvTraGw2Z9NWfF6Qfij3iUNmeOu3PeY+tO+nQR2wCAFnKfoe7HmrzaG50ltLROMFDZ0AdXJVTgJfLbd7+hezsjRMguYuEJ+xdHwr+8fFMCOUn4bnSlYRBDa10ALPVEuYcza+5hqA4PVvNS5XFz6xAQPRCCxSsUeCNxTbCbxOqAI/Bnv2j50FUbt0cjwDFuXZXLUQvxA8QtI/uxFTRawox2bzUwialHkQiegGG0vPLf/qf768kGgqHwD2s3ibnk7AF1pI/w3oiUgeWVUfBQl5RruEwBPx1aH0H1cxr3PrimzTQVQnGXHzQBXnbTLqotl8YzALPicAfoChmupyT60fpMhpMlV9u5D+q9yl214wWZ6/SOBGiNxHUNb2kPVkpp+e37zfyJ3dWGHjXu0P1MaXJf6wL5xFdcwDW3DFx/Pshaqyf+5ISFTI4N5ALBUVvc7JalWTiGVdUce6cOMePaE/37mo4khyUEsvvA0rQmn+WrD1THSoM0JcpFtEYSS/E0uGDB1I7t90/Fcz4P8P7ZAQVWWpigJJtiA3qgyM7lfmATPJK93MfGGLFPHYfiLOKvWMtPszfu1XZH4ar5R/EOhDIhjyGp3NKYZjrDNTeF6/ooAbHwLMZPm3415la/lXe8JZli0BSJLU0+HrfHiQOpCsLVF6bqJ6Iq7wy1+QznQkXEa6ww/pro6upBn8M3jpfvPKAepmZfCrr+cIaEeZJS1CJch5HlFcda9QggR2/o4nO6i5MA42RXUcCf6OoNVy0QT2pxfAKw7wGSCLnbUy15QX7wuVSztaLPrOpehVNY/1akZiuv4ebKT2OnlKHR6o5pzNMFJiUQeWP6pOP2J3XiJSG32zCe9yIQYGtJnzlgXd+rTabCy3v8Nu6GFWLkPl5iN95ZXCRnD00WPlZal7NAwjX8g4TsdGeEQc9YK3ZLJFWgu4pPGV+lK+KrGq4UMCweEAq4DZXpfYItItZIcLyocGdDuGX1SHWE/9/X3strV0tpqg4aWw8qFHmx6eBY8TR6Q/7srPd5ljDPO+earHAX1a7B378DyoZVEox26AESp7m4lDqJgWVo6tHQ9M1NwSCGFSyyml9QQ1zCDgP5KkMqop8T64NQqyJKWg71fCNTgxQ88Ep54QDjKLwIpfUCJpLiVuSJYwUp3OL8I/VZ/4m7Jw8tka+BXKc943kp40xyYggG8Y2uK/uSNgmUCv/qOU6c8mRvFx+9RSLM8gJhK6XjzLnp92pabl6Ata4N4+dWRfj3NJOw+J6d9cSQma6D416yTPNCjy6OU9kPtStWwBYqe8hqPuE2IRrfleCoKp/JChi3VrVMAT3e31tjb9ZS/Rvod5xlo6V/16FnqV0CyIo2rY3tdKw8wLM6h4TAVHFVIDzp1cmFHI9lKQnRwNwPIEVaPuKM0AlPUHvoKG5hH6rLFh/7wD5lUKB4zpdi5pPDD2bDFMabmzVglNcJWtxkkxVN52/dNVrA4658nbcf/652DG6qllEZAGQ+Mts8em4xz5gaTYNnLWNFtWH8w0fspsd/xC/DAObHebKUITF5fXyoBs6gYNMRbQh+erfG3zMHtBXGNoGoYuu12OhNhJvDHu6e5HTuIDNYgccwMM0cW7ykX1zpazB2/9LsBTi8w9WfhM+fWK5hxiZ9lewzVyVLFlhdG/Z/Ra9xad1wBQy/hQLYq8qd3mKWPtMM4ppFLH1tuWLTCKf85RPLLjDkAI8nnJUZKVPN71s8aLXUxHoIBYy0a69D1zRA9Fu1ifJ7Q88EAA=" alt="" height="300px" width="400px">
+          <span>Architect</span>
+          <p>Architecture is the learned game correct and magnificent of forms assembled in the light</p>
+          <input type="button" value="Contact">
+        </div>
+      </div>
+      <div>
+        <h3 class="proj">Contact</h3>
+      </div>
+      <div>
+        <p>Lets get in touch and talk about your next project.</p>
+      </div>
+      <div class="input">
+        <input type="text" name="name" placeholder="Name">
+        <br>
+        <input type="email" name="name" placeholder="email">
+        <br>
+        <input type="text" name="name" placeholder="subject">
+        <br>
+        <input type="text" name="name" placeholder="comment">
+      </div>
+      <div>
+        <button type="submit" class="button">Send Message</button>
+      </div>
+      <br>
+      <br>
+
+    </div>
+    <div class="frame">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1nxxfsdOOs2x2HPEsNV-YlJDLFzM&hl=en&ehbc=2E312F" width="100%" height="100%"></iframe>
+    </div>
+    <footer class="footer">
+      <p>&copy; Powered by SK@CYSEC</p>
+    </footer>
+
+</body>
+
+</html>

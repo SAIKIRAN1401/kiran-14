@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chat-box</title>
+  <style>
+    .chat-box {
+      width: 400px;
+      height: 440px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      position: sticky;
+      z-index: -3;
+      top: 10px;      
+      background-color: rgb(108, 67, 67);
+      
+    }
+
+    .message {
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    .received .sender {
+      color: #007bff;
+    }
+
+    .sent .sender {
+      position: relative;
+      left: 50%;
+      color: #28a745;
+    }
+
+    .sender {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .content {
+      display: inline-block;
+      background-color: #f0f0f0;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    .sent .content {
+      background-color: #d4edda;
+      position: relative;
+      left: 50%;
+    }
+
+    .received .content {
+      background-color: #cce5ff;
+    }
+
+    .send-container {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+
+    .message-input {
+      flex-grow: 1;
+      padding: 8px;
+      margin-right: 10px;
+    }
+
+    .send-button {
+      padding: 8px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .send-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="chat-box">
+    <center>
+    <header style="text-align: center; color: rgb(201, 198, 198); display: inline-block; background-color: black; width: 100px; height: 20px; padding: 10px;">
+      Chat-Box
+    </header>
+  </center>
+    <div class="message received">
+      <span class="sender">Friend:</span>
+      <span class="content">Hi bro</span>
+    </div>
+    <div class="message sent">
+      <span class="sender">You:</span>
+      <span class="content">Hi bro</span>
+    </div>
+    <div class="message received">
+      <span class="sender">Friend:</span>
+      <span class="content">How's it going?</span>
+    </div>
+    <div class="message sent">
+      <span class="sender">You:</span>
+      <span class="content">Good! What about you</span>
+    </div>
+    <div class="message received">
+      <span class="sender">Friend:</span>
+      <span class="content">Nice👍🏻 We will catch up on monday</span>
+    </div>
+    <div class="message sent">
+      <span class="sender">You:</span>
+      <span class="content">yeah okay🤟🏻</span>
+    </div>
+    <div class="send-container">
+      <input type="text" class="message-input" placeholder="Type your message here...">
+      <button class="send-button">Send</button>
+    </div>
+  </div>
+  <p>
+  <center>
+    <header style="text-align: center; color: whitesmoke; display: inline-block; background-color: red;  height: 20px; padding: 10px;">
+      Peaky Blinders storytelling
+    </header><br>
+  </center>
+<br>"Peaky Blinders" is an epic British television saga set against the gritty backdrop of post-World War I Birmingham, England, unfolding a sweeping tale of power, betrayal, and ambition. At its helm is the formidable Tommy Shelby, a complex and cunning leader of the Shelby crime family, who orchestrates their rise from the shadows of poverty to the heights of criminal dominance. Amidst the smoke-filled streets and industrial landscapes, the Shelbys navigate a treacherous underworld populated by rival gangs, corrupt officials, and shadowy figures, forging alliances and dismantling adversaries with ruthless precision.<br>
+
+<br>Against this backdrop of chaos and intrigue, "Peaky Blinders" weaves a tapestry of characters grappling with their own demons and desires. From the fiercely loyal Arthur Shelby to the enigmatic Aunt Polly, each member of the Shelby clan carries their burdens and ambitions, bound together by blood and ambition. Yet, as their empire expands and their influence grows, they find themselves entangled in a web of betrayal and treachery, where every decision carries consequences and every alliance comes at a price. <br>
+
+<br>As the Shelbys navigate the volatile landscape of post-war Britain, they must also contend with formidable foes outside their ranks. From the dogged Inspector Campbell to the cunning Italian mafia, each adversary poses a new threat to their burgeoning empire, forcing the Shelbys to adapt or perish in their quest for supremacy. <br>
+
+<br>But amidst the chaos and carnage, there are moments of tenderness and humanity, as the Shelbys grapple with love, loss, and redemption. From Tommy's turbulent romance with Grace Burgess to Arthur's struggles with addiction and PTSD, "Peaky Blinders" explores the fragile threads that bind us together in the face of adversity. <br>
+
+<br>Through its evocative storytelling and rich character development, "Peaky Blinders" transcends its genre to become a timeless tale of ambition, sacrifice, and the enduring quest for power. As the Shelby family wages war on the streets of Birmingham, they leave an indelible mark on the city and its inhabitants, forever altering the course of history in their relentless pursuit of greatness.
+  </p>
+</body>
+
+</html>

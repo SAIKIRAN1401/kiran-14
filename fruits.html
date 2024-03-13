@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #9fd917;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .fruit {
+            width: 200px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #8ca5eb;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fruit img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .fruit h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .fruit p {
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        .fruit:hover {
+            transform: scale(1.25);
+        }
+        .fruit:hover {
+            transform: rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fruits Menu</h1>
+    </header>
+
+    <div class="menu">
+        <div class="fruit">
+            <img src="https://healthjade.com/wp-content/uploads/2017/10/apple-fruit.jpg" alt="Apple">
+            <h3>Apple</h3>
+            <p>Crunchy and sweet</p>
+        </div>
+
+        <div class="fruit">
+            <img src="https://fruitboxco.com/cdn/shop/products/asset_2_800x.jpg?v=1571839043" alt="Banana">
+            <h3>Banana</h3>
+            <p>Rich in potassium</p>
+        </div>
+
+        <div class="fruit">
+            <img src="https://thecoconutmama.com/wp-content/uploads/2023/06/oranges-scaled.webp" alt="Orange">
+            <h3>Orange</h3>
+            <p>Juicy and refreshing</p>
+        </div>
+
+        <div class="fruit">
+            <img src="https://www.mashed.com/img/gallery/if-there-are-green-grapes-are-there-also-green-raisins/l-intro-1683501192.jpg" alt="Grapes">
+            <h3>Grapes</h3>
+            <p>Small and delicious</p>
+        </div>
+        <div class="fruit">
+            <img src="https://thecoconutmama.com/wp-content/uploads/2023/06/oranges-scaled.webp" alt="Orange">
+            <h3>Orange</h3>
+            <p>Juicy and refreshing</p>
+        </div>
+
+        <div class="fruit">
+            <img src="https://www.mashed.com/img/gallery/if-there-are-green-grapes-are-there-also-green-raisins/l-intro-1683501192.jpg" alt="Grapes">
+            <h3>Grapes</h3>
+            <p>Small and delicious</p>
+        </div>
+        <div class="fruit">
+            <img src="https://healthjade.com/wp-content/uploads/2017/10/apple-fruit.jpg" alt="Apple">
+            <h3>Apple</h3>
+            <p>Crunchy and sweet</p>
+        </div>
+
+        <div class="fruit">
+            <img src="https://fruitboxco.com/cdn/shop/products/asset_2_800x.jpg?v=1571839043" alt="Banana">
+            <h3>Banana</h3>
+            <p>Rich in potassium</p>
+        </div>
+        <div class="pagination">
+            <span class="page-link" onclick="changePage(1)">1</span>
+            <span class="page-link" onclick="changePage(2)">2</span>
+            <span class="page-link" onclick="changePage(3)">3</span>
+        </div>
+    </div>
+
+</body>
+</html>
